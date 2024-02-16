@@ -23,4 +23,5 @@ dist/
 nbdist/
 .nb-gradle/
 
-# Jenkins
+# Terraform
+credentials.tf
