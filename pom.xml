@@ -3,8 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+<!-- Group ID: Identifies your project uniquely across all projects. Typically based on your organization's domain name in reverse order. -->
     <groupId>com.reljicd</groupId>
+<!-- Artifact ID: Name of the jar without version. This will be the name of the file when it's installed/deployed. -->
     <artifactId>shopping-cart</artifactId>
+<!-- Version: Version of the project being built. -->
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -149,17 +152,22 @@
     </build>
 
          <distributionManagement>
+    <!-- Maven Releases Repository -->
     <repository>
+        <!-- Update the id with your Maven Releases id -->
       <id>maven-releases</id>
       <name>maven-releases</name>
+        <!-- Update the URL with your Maven Releases Repository URL -->
       <url>http://35.175.147.46:8081/repository/maven-releases/</url>
+    <!-- Maven Snapshots Repository -->
     </repository>
     <snapshotRepository>
+        <!-- Update the id with your Maven Snapshot id -->
       <id>maven-snapshots</id>
       <name>maven-snapshots</name>
+      <!-- Update the URL with your Maven Snapshot Repository URL -->
       <url>http://35.175.147.46:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
 </distributionManagement>
-
 
 </project>
