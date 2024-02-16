@@ -1,0 +1,10 @@
+replicaCount: 2
+image:
+  repository: lokesh2111/ekart
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 8070
+  nodePort: 30395
